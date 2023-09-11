@@ -564,6 +564,8 @@ header .header-col.mid .social-icons {
     position: relative;
 }
 
+
+
 #subheader h1 {
     margin-top: 100px;
     margin-bottom: 10px;
@@ -658,6 +660,29 @@ header .header-col.mid .social-icons {
 
 /* ================================================== */
 
+/* ================================================== */
+/* faq */
+
+
+
+.accordion-item {
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px rgba(164, 164, 186, 0.3);
+
+}
+
+.accordion-button:after {
+    font-family: FontAwesome !important;
+    content: "\f078" !important;
+    padding-left: 5px;
+    font-size: 8px;
+    position: relative;
+    top: -2px;
+    color: rgb(255, 175, 0) !important;
+}
+
+
+/* ================================================== */
 
 /* navigation */
 
@@ -716,7 +741,7 @@ header .header-col.mid .social-icons {
 }
 
 .rtl #mainmenu li.has-child:after {
-    x position: absolute;
+    position: absolute;
     left: 25px;
 }
 
