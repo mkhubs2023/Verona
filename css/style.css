@@ -32,6 +32,7 @@
     --bg-color-even: #E8E8E8;
     --bg-color-odd: #F4F4F4;
     --bg-color-dark: #111111;
+    --bg-color-gray: #333333;
     --body-font-color: #727272;
     --dark-body-font-color: rgba(255, 255, 255, .5);
     --gray-color: #acacac;
@@ -1486,7 +1487,7 @@ footer {
 }
 
 footer {
-    background: var(--bg-color-dark);
+    background: var(--bg-color-gray);
 }
 
 footer.footer-light {
@@ -9044,6 +9045,31 @@ a.btn-right {
     .single-timeline:nth-child(even) .timeline-text span {
         text-align: left !important;
     }
+
+    .navbar-light {
+        display: block !important;
+        height: 40px;
+    }
+
+    .logo-big-screen {
+        display: none !important;
+
+    }
+
+    .hero-slider {
+        margin-top: -2rem;
+    }
+
+    .nav-items-small-screen {
+        background: white !important;
+        margin-top: 0px !important;
+    }
+
+    .navbar-item-small-screen {
+        color: black !important;
+        margin: 10px !important;
+    }
+
 }
 
 @media all and (max-width: 360px) {
@@ -19011,6 +19037,7 @@ input[type=tel] {
     .timeline-pic {
         height: 300px;
     }
+
 }
 
 /* -------------------------------------------------- 
@@ -19099,7 +19126,7 @@ input[type=tel] {
     }
 
     .hero-slider {
-        margin-top: -5em;
+        margin-top: -4em;
     }
 
     .nav-items-small-screen {
@@ -19114,10 +19141,11 @@ input[type=tel] {
 
     .navbar-light {
         display: block;
+        height: 40px;
     }
 
     .logo-big-screen {
-        /* display: none; */
+        display: none !important;
     }
 }
 
@@ -19183,4 +19211,57 @@ input[type=tel] {
         left: 0;
         top: -21px;
     }
+}
+
+.steps-to-rent {
+    background-image: url('../images/cars/mediagallery.png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.steps-to-rent h1 {
+    color: white;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2.2rem;
+    letter-spacing: 1.2px;
+}
+
+.steps-to-rent .card-steps {
+    /* display: inline-block; */
+    height: 55px;
+    text-align: center;
+    width: 420px;
+    background-color: #FFAF00;
+    margin: 15px 0px 15px 0px;
+    border-radius: 30px;
+    color: white;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.card-steps p {
+    font-size: 22px;
+    justify-content: center;
+    margin: auto;
+    letter-spacing: .8px;
+    line-height: 3px;
+    font-weight: 500;
+}
+
+.card-steps img {
+    justify-content: right;
+    margin: 10px 15px 10px 0px;
+}
+
+.card-steps-down-icon {
+    justify-content: center;
+
+}
+
+.card-steps-down-icon img {
+    width: 70px;
+    margin-top: 1rem;
 }
