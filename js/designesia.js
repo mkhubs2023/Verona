@@ -356,7 +356,7 @@
             items:3,
             rewind:true,
             autoplay:true,
-            loop:true,
+            loop:false,
             autoplayTimeout:4000,
             margin:25,
             nav:true,

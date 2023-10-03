@@ -18,123 +18,11 @@
     <link href="css/coloring.css" rel="stylesheet" type="text/css">
     <!-- color scheme -->
     <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 
     <style>
         /* Style for the car image */
-        .car-image {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            object-position: top;
-            position: relative;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        /* Style for the car details */
-        .car-details {
-            padding: 15px;
-            position: relative;
-        }
-
-        /* Style for the car badges */
-        .car-badges {
-            position: absolute;
-            top: 0;
-            margin-top: -13px;
-            left: 0;
-            z-index: 1;
-            display: flex;
-            align-items: flex-start;
-            padding: 5px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
-
-        .left-badge {
-            background-color: #ffaf00;
-        }
-
-        .right-badge {
-            background-color: #e5dddd;
-        }
-
-        /* Style for the car badge */
-        .car-badge {
-            display: inline-flex;
-            align-items: center;
-            color: #000;
-            border-radius: 20px;
-            margin-right: 5px;
-            font-size: 18px;
-        }
-
-
-        .discount {
-            color: red;
-            text-decoration: line-through;
-        }
-
-        /* Style for the car badge icon */
-        .car-badge img {
-            max-width: 20px;
-            max-height: 20px;
-            margin-right: 3px;
-        }
-
-        /* Style for the WhatsApp button */
-        .whatsapp-button {
-            width: 60px;
-            height: 60px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-        }
-
-        .card-car-gray {
-            background-color: #F2F2F2 !important;
-        }
-
-        .small-card {
-            border-radius: 20px;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .d-img {
-            position: relative;
-        }
-
-        .logo-container {
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            padding: 5px;
-            border-radius: 5px;
-            z-index: 1;
-        }
-
-        .logo-container img {
-            width: 100px;
-            height: 100px;
-        }
-
-        .d-img img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .buttons-card {
-            margin-top: -20px;
-        }
-
-        .border-bottom-none {
-            border-bottom: none !important;
-        }
     </style>
 
 </head>
@@ -337,33 +225,56 @@
         <div class="no-bottom no-top mt-0" id="content">
 
             <div id="top"></div>
-            <section class="hero-slider">
+            <section class="hero-slider" style=" position: relative;">
 
-                <div id="items-carousel-hero" class="owl-carousel wow fadeIn mt-0">
+                <div id="items-carousel-hero" style="position: relative; " class="owl-carousel wow fadeIn mt-0">
 
                     <div class="mb30">
                         <div class="d-img">
                             <img src="images/cars/hero-image.png" height="100%" width="100%" alt="">
+                            <div class="dark-overlay"></div>
                             <div class="owl--text">
                                 <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="col-lg-6 col-md-8 col-12">
                                         <h4><span class="id-color">Plan your trip now</span></h4>
                                         <div class="spacer-10"></div>
-                                        <h1 class="text-white" style="z-index: 99;">Explore the world with
-                                            comfortable
-                                            car</h1>
-                                        <p class="lead text-white title-lg-screen">Embark on unforgettable adventures
-                                            and discover the
-                                            world in
-                                            unparalleled
-                                            comfort and style with our fleet of exceptionally comfortable cars.</p>
-                                        <a class="btn-main" href="#">Choose a Car</a>&nbsp;&nbsp;&nbsp;
+                                        <h1 class="text-white sub-title-slider">Explore the world
+                                            with comfortable car</h1>
+                                        <a class="btn-main button-slider" href="#">Choose a Car</a>&nbsp;&nbsp;&nbsp;
+                                    </div>
+
+                                    <div class="col-lg-3 offset-lg-3 d-lg-block d-none ">
+                                        <div class="slider-side-image">
+                                            <img class="mb-3" src="images/cars/car-small.png" alt="">
+                                            <img src="images/cars/car-small01.png" alt="">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="dropdown-slider dropdown">
+                    <a class="btn btn-outline-white dropdown-toggle dropdown-toggle-slider" href="#" role="button"
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Type
+                    </a>
 
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    <a class="btn btn-outline-white dropdown-toggle dropdown-toggle-slider" style="margin-left:-5px ;"
+                        href="#" role="button" id="dropdownMenuLink1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Brand
+                    </a>
+
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink1">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                 </div>
             </section>
             <!-- <section aria-label="section" class="pt40 pb40 text-light" data-bgcolor="#181818">
@@ -492,6 +403,496 @@
                         <div id="items-carousel" class="owl-carousel wow fadeIn">
 
                             <div class="col-lg-12">
+                                <div class="de-item card-car-gray mb30">
+                                    <div class="d-img">
+                                        <div class="logo-container">
+                                            <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                                alt="BMW X5 M Competition">
+                                        </div>
+                                        <img src="images/cars/ford-raptor.jpg" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <div class="car-badges">
+                                                <span class="car-badge left-badge badge">Economy</span>
+                                                <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                        alt="">4</span>
+                                            </div>
+                                            <div class="d-atr-group mt-4 border-bottom-none">
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/2.svg" alt="">Manual</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/3.svg" alt="">Trunk</span>
+                                            </div>
+
+                                            <div class="row shadow bg-white justify-content-center small-card">
+                                                <div class="col-4 mt-2">
+                                                    <span>Deposit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Km Limit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Credit Card</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-offer mt-2 text-center">
+                                                <div class=" row pt-2 justify-content-center">
+                                                    <div class="col-6 pl-4 ">
+                                                        <span>2500 AED per Day</span>
+                                                        <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                            Days <span class="discount">4124 AED</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 text-center mt-4">
+                                                        <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center buttons-card">
+                                                <div class="col-8">
+                                                    <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                        href="car-single.html">Rent Now</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a class="whatsapp-button d-block"
+                                                        href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                        target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item card-car-gray mb30">
+                                    <div class="d-img">
+                                        <div class="logo-container">
+                                            <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                                alt="BMW X5 M Competition">
+                                        </div>
+                                        <img src="images/cars/ford-raptor.jpg" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <div class="car-badges">
+                                                <span class="car-badge left-badge badge">Economy</span>
+                                                <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                        alt="">4</span>
+                                            </div>
+                                            <div class="d-atr-group mt-4 border-bottom-none">
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/2.svg" alt="">Manual</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/3.svg" alt="">Trunk</span>
+                                            </div>
+
+                                            <div class="row shadow bg-white justify-content-center small-card">
+                                                <div class="col-4 mt-2">
+                                                    <span>Deposit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Km Limit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Credit Card</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-offer mt-2 text-center">
+                                                <div class=" row pt-2 justify-content-center">
+                                                    <div class="col-6 pl-4 ">
+                                                        <span>2500 AED per Day</span>
+                                                        <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                            Days <span class="discount">4124 AED</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 text-center mt-4">
+                                                        <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center buttons-card">
+                                                <div class="col-8">
+                                                    <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                        href="car-single.html">Rent Now</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a class="whatsapp-button d-block"
+                                                        href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                        target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item card-car-gray mb30">
+                                    <div class="d-img">
+                                        <div class="logo-container">
+                                            <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                                alt="BMW X5 M Competition">
+                                        </div>
+                                        <img src="images/cars/ford-raptor.jpg" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <div class="car-badges">
+                                                <span class="car-badge left-badge badge">Economy</span>
+                                                <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                        alt="">4</span>
+                                            </div>
+                                            <div class="d-atr-group mt-4 border-bottom-none">
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/2.svg" alt="">Manual</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/3.svg" alt="">Trunk</span>
+                                            </div>
+
+                                            <div class="row shadow bg-white justify-content-center small-card">
+                                                <div class="col-4 mt-2">
+                                                    <span>Deposit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Km Limit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Credit Card</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-offer mt-2 text-center">
+                                                <div class=" row pt-2 justify-content-center">
+                                                    <div class="col-6 pl-4 ">
+                                                        <span>2500 AED per Day</span>
+                                                        <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                            Days <span class="discount">4124 AED</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 text-center mt-4">
+                                                        <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center buttons-card">
+                                                <div class="col-8">
+                                                    <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                        href="car-single.html">Rent Now</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a class="whatsapp-button d-block"
+                                                        href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                        target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item card-car-gray mb30">
+                                    <div class="d-img">
+                                        <div class="logo-container">
+                                            <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                                alt="BMW X5 M Competition">
+                                        </div>
+                                        <img src="images/cars/ford-raptor.jpg" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <div class="car-badges">
+                                                <span class="car-badge left-badge badge">Economy</span>
+                                                <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                        alt="">4</span>
+                                            </div>
+                                            <div class="d-atr-group mt-4 border-bottom-none">
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/2.svg" alt="">Manual</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/3.svg" alt="">Trunk</span>
+                                            </div>
+
+                                            <div class="row shadow bg-white justify-content-center small-card">
+                                                <div class="col-4 mt-2">
+                                                    <span>Deposit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Km Limit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Credit Card</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-offer mt-2 text-center">
+                                                <div class=" row pt-2 justify-content-center">
+                                                    <div class="col-6 pl-4 ">
+                                                        <span>2500 AED per Day</span>
+                                                        <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                            Days <span class="discount">4124 AED</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 text-center mt-4">
+                                                        <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center buttons-card">
+                                                <div class="col-8">
+                                                    <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                        href="car-single.html">Rent Now</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a class="whatsapp-button d-block"
+                                                        href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                        target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item card-car-gray mb30">
+                                    <div class="d-img">
+                                        <div class="logo-container">
+                                            <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                                alt="BMW X5 M Competition">
+                                        </div>
+                                        <img src="images/cars/ford-raptor.jpg" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <div class="car-badges">
+                                                <span class="car-badge left-badge badge">Economy</span>
+                                                <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                        alt="">4</span>
+                                            </div>
+                                            <div class="d-atr-group mt-4 border-bottom-none">
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/2.svg" alt="">Manual</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/3.svg" alt="">Trunk</span>
+                                            </div>
+
+                                            <div class="row shadow bg-white justify-content-center small-card">
+                                                <div class="col-4 mt-2">
+                                                    <span>Deposit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Km Limit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Credit Card</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-offer mt-2 text-center">
+                                                <div class=" row pt-2 justify-content-center">
+                                                    <div class="col-6 pl-4 ">
+                                                        <span>2500 AED per Day</span>
+                                                        <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                            Days <span class="discount">4124 AED</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 text-center mt-4">
+                                                        <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center buttons-card">
+                                                <div class="col-8">
+                                                    <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                        href="car-single.html">Rent Now</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a class="whatsapp-button d-block"
+                                                        href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                        target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item card-car-gray mb30">
+                                    <div class="d-img">
+                                        <div class="logo-container">
+                                            <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                                alt="BMW X5 M Competition">
+                                        </div>
+                                        <img src="images/cars/ford-raptor.jpg" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <div class="car-badges">
+                                                <span class="car-badge left-badge badge">Economy</span>
+                                                <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                        alt="">4</span>
+                                            </div>
+                                            <div class="d-atr-group mt-4 border-bottom-none">
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/2.svg" alt="">Manual</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/3.svg" alt="">Trunk</span>
+                                            </div>
+
+                                            <div class="row shadow bg-white justify-content-center small-card">
+                                                <div class="col-4 mt-2">
+                                                    <span>Deposit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Km Limit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Credit Card</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-offer mt-2 text-center">
+                                                <div class=" row pt-2 justify-content-center">
+                                                    <div class="col-6 pl-4 ">
+                                                        <span>2500 AED per Day</span>
+                                                        <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                            Days <span class="discount">4124 AED</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 text-center mt-4">
+                                                        <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center buttons-card">
+                                                <div class="col-8">
+                                                    <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                        href="car-single.html">Rent Now</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a class="whatsapp-button d-block"
+                                                        href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                        target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-12">
+                                <div class="de-item card-car-gray mb30">
+                                    <div class="d-img">
+                                        <div class="logo-container">
+                                            <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                                alt="BMW X5 M Competition">
+                                        </div>
+                                        <img src="images/cars/ford-raptor.jpg" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <div class="d-info">
+                                        <div class="d-text">
+                                            <div class="car-badges">
+                                                <span class="car-badge left-badge badge">Economy</span>
+                                                <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                        alt="">4</span>
+                                            </div>
+                                            <div class="d-atr-group mt-4 border-bottom-none">
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/2.svg" alt="">Manual</span>
+                                                <span class="d-atr text-muted font-weight-normal"><img
+                                                        src="images/icons/3.svg" alt="">Trunk</span>
+                                            </div>
+
+                                            <div class="row shadow bg-white justify-content-center small-card">
+                                                <div class="col-4 mt-2">
+                                                    <span>Deposit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Km Limit</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                                </div>
+                                                <div class="col-4 mt-2">
+                                                    <span>Credit Card</span>
+                                                    <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="price-offer mt-2 text-center">
+                                                <div class=" row pt-2 justify-content-center">
+                                                    <div class="col-6 pl-4 ">
+                                                        <span>2500 AED per Day</span>
+                                                        <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                            Days <span class="discount">4124 AED</span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 text-center mt-4">
+                                                        <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row justify-content-center buttons-card">
+                                                <div class="col-8">
+                                                    <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                        href="car-single.html">Rent Now</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <a class="whatsapp-button d-block"
+                                                        href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                        target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- <div class="col-lg-12">
                                 <div class="de-item mb30">
                                     <div class="d-img">
                                         <img src="images/cars/jeep-renegade.jpg" class="img-fluid" alt="">
@@ -649,7 +1050,7 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
 
                         </div>
 
@@ -806,6 +1207,414 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-4">
+                            <div class="de-item card-car-gray mb30">
+                                <div class="d-img">
+                                    <div class="logo-container">
+                                        <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="BMW X5 M Competition">
+                                </div>
+                                <div class="d-info">
+                                    <div class="d-text">
+                                        <div class="car-badges">
+                                            <span class="car-badge left-badge badge">Economy</span>
+                                            <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                    alt="">4</span>
+                                        </div>
+                                        <div class="d-atr-group mt-4 border-bottom-none">
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/2.svg" alt="">Manual</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/3.svg" alt="">Trunk</span>
+                                        </div>
+
+                                        <div class="row shadow bg-white justify-content-center small-card">
+                                            <div class="col-4 mt-2">
+                                                <span>Deposit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Km Limit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Credit Card</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="price-offer mt-2 text-center">
+                                            <div class=" row pt-2 justify-content-center">
+                                                <div class="col-6 pl-4 ">
+                                                    <span>2500 AED per Day</span>
+                                                    <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                        Days <span class="discount">4124 AED</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-center mt-4">
+                                                    <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center buttons-card">
+                                            <div class="col-8">
+                                                <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                    href="car-single.html">Rent Now</a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="whatsapp-button d-block"
+                                                    href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                    target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="de-item card-car-gray mb30">
+                                <div class="d-img">
+                                    <div class="logo-container">
+                                        <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="BMW X5 M Competition">
+                                </div>
+                                <div class="d-info">
+                                    <div class="d-text">
+                                        <div class="car-badges">
+                                            <span class="car-badge left-badge badge">Economy</span>
+                                            <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                    alt="">4</span>
+                                        </div>
+                                        <div class="d-atr-group mt-4 border-bottom-none">
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/2.svg" alt="">Manual</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/3.svg" alt="">Trunk</span>
+                                        </div>
+
+                                        <div class="row shadow bg-white justify-content-center small-card">
+                                            <div class="col-4 mt-2">
+                                                <span>Deposit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Km Limit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Credit Card</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="price-offer mt-2 text-center">
+                                            <div class=" row pt-2 justify-content-center">
+                                                <div class="col-6 pl-4 ">
+                                                    <span>2500 AED per Day</span>
+                                                    <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                        Days <span class="discount">4124 AED</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-center mt-4">
+                                                    <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center buttons-card">
+                                            <div class="col-8">
+                                                <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                    href="car-single.html">Rent Now</a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="whatsapp-button d-block"
+                                                    href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                    target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="de-item card-car-gray mb30">
+                                <div class="d-img">
+                                    <div class="logo-container">
+                                        <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="BMW X5 M Competition">
+                                </div>
+                                <div class="d-info">
+                                    <div class="d-text">
+                                        <div class="car-badges">
+                                            <span class="car-badge left-badge badge">Economy</span>
+                                            <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                    alt="">4</span>
+                                        </div>
+                                        <div class="d-atr-group mt-4 border-bottom-none">
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/2.svg" alt="">Manual</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/3.svg" alt="">Trunk</span>
+                                        </div>
+
+                                        <div class="row shadow bg-white justify-content-center small-card">
+                                            <div class="col-4 mt-2">
+                                                <span>Deposit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Km Limit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Credit Card</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="price-offer mt-2 text-center">
+                                            <div class=" row pt-2 justify-content-center">
+                                                <div class="col-6 pl-4 ">
+                                                    <span>2500 AED per Day</span>
+                                                    <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                        Days <span class="discount">4124 AED</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-center mt-4">
+                                                    <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center buttons-card">
+                                            <div class="col-8">
+                                                <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                    href="car-single.html">Rent Now</a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="whatsapp-button d-block"
+                                                    href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                    target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="de-item card-car-gray mb30">
+                                <div class="d-img">
+                                    <div class="logo-container">
+                                        <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="BMW X5 M Competition">
+                                </div>
+                                <div class="d-info">
+                                    <div class="d-text">
+                                        <div class="car-badges">
+                                            <span class="car-badge left-badge badge">Economy</span>
+                                            <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                    alt="">4</span>
+                                        </div>
+                                        <div class="d-atr-group mt-4 border-bottom-none">
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/2.svg" alt="">Manual</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/3.svg" alt="">Trunk</span>
+                                        </div>
+
+                                        <div class="row shadow bg-white justify-content-center small-card">
+                                            <div class="col-4 mt-2">
+                                                <span>Deposit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Km Limit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Credit Card</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="price-offer mt-2 text-center">
+                                            <div class=" row pt-2 justify-content-center">
+                                                <div class="col-6 pl-4 ">
+                                                    <span>2500 AED per Day</span>
+                                                    <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                        Days <span class="discount">4124 AED</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-center mt-4">
+                                                    <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center buttons-card">
+                                            <div class="col-8">
+                                                <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                    href="car-single.html">Rent Now</a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="whatsapp-button d-block"
+                                                    href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                    target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="de-item card-car-gray mb30">
+                                <div class="d-img">
+                                    <div class="logo-container">
+                                        <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="BMW X5 M Competition">
+                                </div>
+                                <div class="d-info">
+                                    <div class="d-text">
+                                        <div class="car-badges">
+                                            <span class="car-badge left-badge badge">Economy</span>
+                                            <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                    alt="">4</span>
+                                        </div>
+                                        <div class="d-atr-group mt-4 border-bottom-none">
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/2.svg" alt="">Manual</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/3.svg" alt="">Trunk</span>
+                                        </div>
+
+                                        <div class="row shadow bg-white justify-content-center small-card">
+                                            <div class="col-4 mt-2">
+                                                <span>Deposit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Km Limit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Credit Card</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="price-offer mt-2 text-center">
+                                            <div class=" row pt-2 justify-content-center">
+                                                <div class="col-6 pl-4 ">
+                                                    <span>2500 AED per Day</span>
+                                                    <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                        Days <span class="discount">4124 AED</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-center mt-4">
+                                                    <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center buttons-card">
+                                            <div class="col-8">
+                                                <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                    href="car-single.html">Rent Now</a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="whatsapp-button d-block"
+                                                    href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                    target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="de-item card-car-gray mb30">
+                                <div class="d-img">
+                                    <div class="logo-container">
+                                        <img src="images/brands/ford-logo.webp" class="img-fluid"
+                                            alt="BMW X5 M Competition">
+                                    </div>
+                                    <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="BMW X5 M Competition">
+                                </div>
+                                <div class="d-info">
+                                    <div class="d-text">
+                                        <div class="car-badges">
+                                            <span class="car-badge left-badge badge">Economy</span>
+                                            <span class="car-badge right-badge badge"><img src="images/people.svg"
+                                                    alt="">4</span>
+                                        </div>
+                                        <div class="d-atr-group mt-4 border-bottom-none">
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/petrol.svg" width="25px" alt="">Petrol</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/2.svg" alt="">Manual</span>
+                                            <span class="d-atr text-muted font-weight-normal"><img
+                                                    src="images/icons/3.svg" alt="">Trunk</span>
+                                        </div>
+
+                                        <div class="row shadow bg-white justify-content-center small-card">
+                                            <div class="col-4 mt-2">
+                                                <span>Deposit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Km Limit</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
+                                            </div>
+                                            <div class="col-4 mt-2">
+                                                <span>Credit Card</span>
+                                                <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="price-offer mt-2 text-center">
+                                            <div class=" row pt-2 justify-content-center">
+                                                <div class="col-6 pl-4 ">
+                                                    <span>2500 AED per Day</span>
+                                                    <p class="mt-0 pt-0  font-weight-bold text-black">3
+                                                        Days <span class="discount">4124 AED</span>
+                                                    </p>
+                                                </div>
+                                                <div class="col-6 text-center mt-4">
+                                                    <h3 class="text-warning font-weight-bold">7500 AED</h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-center buttons-card">
+                                            <div class="col-8">
+                                                <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
+                                                    href="car-single.html">Rent Now</a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a class="whatsapp-button d-block"
+                                                    href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
+                                                    target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-lg-4">
                             <div class="de-item mb30">
                                 <div class="d-img">
                                     <img src="images/cars/jeep-renegade.jpg" class="img-fluid" alt="">
@@ -954,7 +1763,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="d-flex justify-content-center ">
                         <a class="btn-main">View More</a>
@@ -963,7 +1772,7 @@
 
             </section>
             <!-- Start Car Type Section -->
-            <section id="section-cars">
+            <!-- <section id="section-cars">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 offset-lg-3 text-center">
@@ -994,7 +1803,7 @@
                         </ul>
 
                         <div class="tab-content" id="pills-tabContent">
-                            <!-- Start suvs tab -->
+                          
                             <div class="tab-pane fade show active" id="pills-suvs" role="tabpanel"
                                 aria-labelledby="pills-suvs-tab">
                                 <div id="items-carousel-SUVs" class="owl-carousel wow fadeIn">
@@ -1156,8 +1965,7 @@
 
                                 </div>
                             </div>
-                            <!-- End suvs tab -->
-                            <!-- Start sedans tab -->
+                          
                             <div class="tab-pane fade" id="pills-sedans" role="tabpanel"
                                 aria-labelledby="pills-sedans-tab">
                                 <div id="items-carousel-sedans" class="owl-carousel wow fadeIn">
@@ -1313,8 +2121,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- End sedans tab -->
-                            <!-- Start sport car tab -->
+                           
                             <div class="tab-pane fade" id="pills-sports" role="tabpanel"
                                 aria-labelledby="pills-sports-tab">
                                 <div id="items-carousel-sport-car" class="owl-carousel wow fadeIn">
@@ -1442,12 +2249,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Start sport car tab -->
+                         
                         </div>
                     </div>
-            </section>
+            </section> -->
             <!-- End Car Type Section  -->
-            <section id="section-img-with-tab" data-bgcolor="#dfdfdf">
+            <!-- <section id="section-img-with-tab" data-bgcolor="#dfdfdf">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-5 offset-lg-7">
@@ -1504,10 +2311,11 @@
 
                 <div class="image-container col-md-6 pull-right" data-bgimage="url(images/misc/e1.jpg) center">
                 </div>
-            </section>
+            </section> -->
 
             <section class="steps-to-rent">
-                <div class="container d-flex flex-column align-items-center justify-content-center text-center">
+                <div
+                    class="container d-md-flex d-lg-flex flex-column align-items-center justify-content-center text-center">
                     <h1>Three Easy Steps to Rent-a-kar</h1>
                     <div class="card-steps ">
                         <p>Select a Car</p>
@@ -1527,8 +2335,85 @@
                 </div>
             </section>
 
+            <section class="our-features">
+                <div class="container text-center">
+                    <h1>Our Features</h1>
+                    <p>Discover a world of convenience, safety, and customization, paving the way for unforgettable<br>
+                        adventures and seamless mobility solutions.</p>
 
-            <section aria-label="section">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4 col-12  wow fadeIn feature-main-card-1" data-wow-duration="1s"
+                            data-wow-delay="0.5s">
+                            <div class="feature-card feature-card-1">
+                                <h5>
+                                    First class services
+                                </h5>
+                                <p>where luxury meets exceptional care , creating unforgettable moments and exceeding
+                                    your every expctation</p>
+                                <img src="images/cars-features/features6.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-12 wow fadeIn feature-main-card-2" data-wow-duration="1s"
+                            data-wow-delay="1s">
+                            <div class="feature-card feature-card-2">
+                                <h5>
+                                    NO ADDITIONAL FEES
+                                </h5>
+                                <p>Free child seats and extra drivers. Save money on your rental.</p>
+                                <img src="images/cars-features/features5.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-12 wow fadeIn feature-main-card-3" data-wow-duration="1s"
+                            data-wow-delay="1.5s">
+                            <div class="feature-card feature-card-3">
+                                <h5>
+                                    EASY BOOKING PROCESS
+                                </h5>
+                                <p>Hassle - free online booking for UAE residents and tourists.Book your service on our
+                                    website with minimal documents.</p>
+                                <img src="images/cars-features/features4.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-12 wow fadeIn feature-main-card-4" data-wow-duration="1s"
+                            data-wow-delay="2s">
+                            <div class="feature-card feature-card-4">
+                                <h5>
+                                    Quality at Minimum Expense
+                                </h5>
+                                <p>Rentakar offers cars at pocket - friendly competitive prices with high quility .</p>
+                                <img src="images/cars-features/features3.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-12 wow fadeIn feature-main-card-5" data-wow-duration="1s"
+                            data-wow-delay="2.5s">
+                            <div class="feature-card feature-card-5">
+                                <h5>
+                                    Free Pick-Up & Drop-Off
+                                </h5>
+                                <p>Rent a car in Dubai with free pickup and drop - off , anwhere in the city.</p>
+                                <img src="images/cars-features/features2.png" alt="">
+
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-4 col-12 wow fadeIn feature-main-card-6" data-wow-duration="1s"
+                            data-wow-delay="3s">
+                            <div class="feature-card feature-card-6">
+                                <h5>
+                                    24/7 road assistance
+                                </h5>
+                                <p>Expert roadside assistance 24/7 . We are here to help you get back on the road
+                                    quickly and safely.</p>
+                                <img src="images/cars-features/features1.png" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section aria-label="section">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 offset-lg-3 text-center">
@@ -1582,7 +2467,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <!--        
             <section id="section-testimonials" class="no-top no-bottom">
                 <div class="container">
@@ -1643,7 +2528,39 @@
                 </div>
             </section> -->
 
-            <section id="section-news">
+            <section class="section-news">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/cars-features/Group.png" width="100%" height="100%" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <h1>Latest News</h1>
+                            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                                ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem
+                                ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum</p>
+                            <div class="news-btns">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-4 col-6">
+                                        <a class="btn-main btn-block mt-3 font-weight-bold text-uppercase rounded-pill"
+                                            href="car-single.html">Subscribe</a>
+                                    </div>
+                                    <div class="col-md-6 col-lg-4 col-6">
+                                        <a class="btn-main-outline btn-block mt-3 font-weight-bold text-uppercase rounded-pill"
+                                            href="car-single.html">View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question-div">
+                                <p>Have any questions? Contact us!</p>
+                                <h4>+124 4325665</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- <section id="section-news">
                 <div class="container">
                     <div class="row align-items-center">
                         <div class="col-lg-6 offset-lg-3 text-center">
@@ -1715,20 +2632,20 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
-            <section id="section-fun-facts" class="bg-color text-light">
+            <section id="section-fun-facts" class=" text-light">
                 <div class="container">
                     <div class="row g-custom-x force-text-center">
-                        <div class="col-md-3 col-sm-6 mb-sm-30">
+                        <div class="col-md-3 col-sm-6 mb-sm-30 card-facts">
                             <div class="de_count wow fadeInUp">
-                                <h3 class="timer" data-to="15425" data-speed="3000">0</h3>
+                                <h3 class="timer text-black" data-to="15425" data-speed="3000">0</h3>
                                 Trips Powered
                                 <p class="d-small">Lorem ipsum adipisicing officia in adipisicing do velit sit tempor ea
                                     consectetur.</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-sm-30">
+                        <div class="col-md-3 col-sm-6 mb-sm-30 card-facts">
                             <div class="de_count wow fadeInUp">
                                 <h3 class="timer" data-to="8745" data-speed="3000">0</h3>
                                 Happy Customers
@@ -1736,7 +2653,7 @@
                                     consectetur.</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-sm-30">
+                        <div class="col-md-3 col-sm-6 mb-sm-30 card-facts">
                             <div class="de_count wow fadeInUp">
                                 <h3 class="timer" data-to="235" data-speed="3000">0</h3>
                                 Fleets Vehicle
@@ -1744,7 +2661,7 @@
                                     consectetur.</p>
                             </div>
                         </div>
-                        <div class="col-md-3 col-sm-6 mb-sm-30">
+                        <div class="col-md-3 col-sm-6 mb-sm-30 card-facts">
                             <div class="de_count wow fadeInUp">
                                 <h3 class="timer" data-to="15" data-speed="3000">0</h3>
                                 Years Experience
@@ -1756,250 +2673,7 @@
                 </div>
             </section>
             <!-- new section here -->
-            <section>
-                <div class="container">
-                    <div class="row">
-                        <!-- <div class="col-xl-6 col-md-6 col-sm-6 col-12">
-                            <div class="card">
-                                <div class="logo">
-                                    <img src="/images/brands/audi-logo.webp" alt="">
-                                </div>
-                                <div class="car-photo">
-                                    <img src="/images/car-single/3.jpg" alt="">
-                                </div>
-                                <div class="info">
-                                    <div class="d-atr-group">
-                                        <span class="d-atr"><a class="view-button btn btn-warning" href="#">Economy</a>
-                                        </span>
-                                        <span class="d-atr"><img src="images/icons/2.svg"
-                                                alt="">2</span>
-                                    </div>
 
-                                    <div class="d-atr-group">
-                                        <span class="d-atr"><img src="images/icons/1.svg"
-                                                alt="">Petrol</span>
-                                        <span class="d-atr"><img src="images/icons/2.svg"
-                                                alt="">Manual</span>
-                                        <span class="d-atr"><img src="images/icons/3.svg"
-                                                alt="">Truck</span>
-                                    </div>
-                                    
-                                </div>
-                                <div class="buttons">
-                                    
-                                </div>
-                            </div>
-                        </div> -->
-                        <div class="col-xl-4 col-md-4 col-sm-4 col-12">
-                            <div class="de-item card-car-gray mb30">
-                                <div class="d-img">
-                                    <div class="logo-container">
-                                        <img src="images/brands/ford-logo.webp" class="img-fluid"
-                                            alt="BMW X5 M Competition">
-                                    </div>
-                                    <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="BMW X5 M Competition">
-                                </div>
-                                <div class="d-info">
-                                    <div class="d-text">
-                                        <div class="car-badges">
-                                            <span class="car-badge left-badge badge">Economy</span>
-                                            <span class="car-badge right-badge badge"><img src="images/people.svg"
-                                                    alt="">4</span>
-                                        </div>
-                                        <div class="d-atr-group mt-4 border-bottom-none">
-                                            <span class="d-atr text-muted font-weight-normal"><img
-                                                    src="images/petrol.svg" width="25px" alt="">Petrol</span>
-                                            <span class="d-atr text-muted font-weight-normal"><img
-                                                    src="images/icons/2.svg" alt="">Manual</span>
-                                            <span class="d-atr text-muted font-weight-normal"><img
-                                                    src="images/icons/3.svg" alt="">Trunk</span>
-                                        </div>
-
-                                        <div class="row shadow bg-white justify-content-center small-card">
-                                            <div class="col-4 mt-2">
-                                                <span>Deposit</span>
-                                                <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
-                                            </div>
-                                            <div class="col-4 mt-2">
-                                                <span>Km Limit</span>
-                                                <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
-                                            </div>
-                                            <div class="col-4 mt-2">
-                                                <span>Credit Card</span>
-                                                <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="price-offer mt-2 text-center">
-                                            <div class=" row pt-2 justify-content-center">
-                                                <div class="col-6 pl-4 ">
-                                                    <span>2500 AED per Day</span>
-                                                    <p class="mt-0 pt-0  font-weight-bold text-black">3
-                                                        Days <span class="discount">4124 AED</span>
-                                                    </p>
-                                                </div>
-                                                <div class="col-6 text-center mt-4">
-                                                    <h3 class="text-warning font-weight-bold">7500 AED</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row justify-content-center buttons-card">
-                                            <div class="col-8">
-                                                <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
-                                                    href="car-single.html">Rent Now</a>
-                                            </div>
-                                            <div class="col-4">
-                                                <a class="whatsapp-button d-block"
-                                                    href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
-                                                    target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-md-4 col-sm-4 col-12">
-                            <div class="de-item card-car-gray mb30">
-                                <div class="d-img">
-                                    <div class="logo-container">
-                                        <img src="images/brands/ford-logo.webp" width="100px" height="100px"
-                                            class="img-fluid" alt="BMW X5 M Competition">
-                                    </div>
-                                    <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="BMW X5 M Competition">
-                                </div>
-                                <div class="d-info">
-                                    <div class="d-text">
-                                        <div class="car-badges">
-                                            <span class="car-badge left-badge badge">Economy</span>
-                                            <span class="car-badge right-badge badge"><img src="images/people.svg"
-                                                    alt="">4</span>
-                                        </div>
-                                        <div class="d-atr-group  mt-4" style="border-bottom: none;">
-                                            <span class="d-atr text-muted font-weight-normal"><img
-                                                    src="images/petrol.svg" width="25px" alt="">Petrol</span>
-                                            <span class="d-atr text-muted font-weight-normal"><img
-                                                    src="images/icons/2.svg" alt="">Manual</span>
-                                            <span class="d-atr text-muted font-weight-normal"><img
-                                                    src="images/icons/3.svg" alt="">Trunk</span>
-                                        </div>
-
-                                        <div class="row shadow bg-white justify-content-center small-card">
-                                            <div class="col-4 mt-2">
-                                                <span>Deposit</span>
-                                                <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
-                                            </div>
-                                            <div class="col-4 mt-2">
-                                                <span>Km Limit</span>
-                                                <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
-                                            </div>
-                                            <div class="col-4 mt-2">
-                                                <span>Credit Card</span>
-                                                <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="price-offer mt-2 text-center">
-                                            <div class=" row pt-2 justify-content-center">
-                                                <div class="col-6 pl-4 ">
-                                                    <span>2500 AED per Day</span>
-                                                    <p class="mt-0 pt-0  font-weight-bold text-black">3
-                                                        Days <span class="discount">4124 AED</span>
-                                                    </p>
-                                                </div>
-                                                <div class="col-6 text-center mt-4">
-                                                    <h3 class="text-warning font-weight-bold">7500 AED</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row justify-content-center buttons-card">
-                                            <div class="col-8">
-                                                <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
-                                                    href="car-single.html">Rent Now</a>
-                                            </div>
-                                            <div class="col-4">
-                                                <a class="whatsapp-button d-block"
-                                                    href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
-                                                    target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-md-4 col-sm-4 col-12">
-                            <div class="de-item card-car-gray mb30">
-                                <div class="d-img">
-                                    <div class="logo-container">
-                                        <img src="images/brands/ford-logo.webp" width="100px" height="100px"
-                                            class="img-fluid" alt="BMW X5 M Competition">
-                                    </div>
-                                    <img src="images/cars/ford-raptor.jpg" class="img-fluid" alt="BMW X5 M Competition">
-                                </div>
-                                <div class="d-info">
-                                    <div class="d-text">
-                                        <div class="car-badges">
-                                            <span class="car-badge left-badge badge">Economy</span>
-                                            <span class="car-badge right-badge badge"><img src="images/people.svg"
-                                                    alt="">4</span>
-                                        </div>
-                                        <div class="d-atr-group  mt-4" style="border-bottom: none;">
-                                            <span class="d-atr text-muted font-weight-normal"><img
-                                                    src="images/petrol.svg" width="25px" alt="">Petrol</span>
-                                            <span class="d-atr text-muted font-weight-normal"><img
-                                                    src="images/icons/2.svg" alt="">Manual</span>
-                                            <span class="d-atr text-muted font-weight-normal"><img
-                                                    src="images/icons/3.svg" alt="">Trunk</span>
-                                        </div>
-
-                                        <div class="row shadow bg-white justify-content-center small-card">
-                                            <div class="col-4 mt-2">
-                                                <span>Deposit</span>
-                                                <p class="mt-0 pt-0 font-weight-bold text-black">1000L</p>
-                                            </div>
-                                            <div class="col-4 mt-2">
-                                                <span>Km Limit</span>
-                                                <p class="mt-0 pt-0 font-weight-bold text-black">900 KM</p>
-                                            </div>
-                                            <div class="col-4 mt-2">
-                                                <span>Credit Card</span>
-                                                <p class="mt-0 pt-0 font-weight-bold text-black">Req</p>
-                                            </div>
-                                        </div>
-
-                                        <div class="price-offer mt-2 text-center">
-                                            <div class=" row pt-2 justify-content-center">
-                                                <div class="col-6 pl-4 ">
-                                                    <span>2500 AED per Day</span>
-                                                    <p class="mt-0 pt-0  font-weight-bold text-black">3
-                                                        Days <span class="discount">4124 AED</span>
-                                                    </p>
-                                                </div>
-                                                <div class="col-6 text-center mt-4">
-                                                    <h3 class="text-warning font-weight-bold">7500 AED</h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row justify-content-center buttons-card">
-                                            <div class="col-8">
-                                                <a class="btn-main btn-block mt-3 fs-5 font-weight-bold text-uppercase"
-                                                    href="car-single.html">Rent Now</a>
-                                            </div>
-                                            <div class="col-4">
-                                                <a class="whatsapp-button d-block"
-                                                    href="https://api.whatsapp.com/send?phone=12345&text=&source=&data="
-                                                    target="_blank"><i class="fa fa-whatsapp my-whatsApp"></i></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-            </section>
 
         </div>
         <!-- content close -->
@@ -2011,30 +2685,55 @@
         <footer class="text-light">
             <div class="container">
                 <div class="row g-custom-x">
-                    <div class="col-lg-5">
+                    <div class="col-lg-4">
                         <div class="widget">
-                            <h5>About Rentaly</h5>
-                            <p>Where quality meets affordability. We understand the importance of a smooth and enjoyable
+                            <h5><img src="images/logo.svg" width="40px" alt=""><span class="ml-4"> RENT A CAR</span>
+                            </h5>
+                            <p class=" m-3">Where quality meets affordability. We understand the importance of a smooth
+                                and enjoyable
                                 journey without the burden of excessive costs. That's why we have meticulously crafted
                                 our offerings to provide you with top-notch vehicles at minimum expense.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                                <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
+                                <a href="#"><i class="fa fa-instagram fa-lg"></i></a>
+                            </div>
+
                         </div>
                     </div>
 
                     <div class="col-lg-2">
                         <div class="widget">
                             <h5>Pages</h5>
-                            <address class="s1">
+                            <div class="list">
 
                                 <span><a href="#">Cars Fleet</a></span>
+                                <br>
                                 <span><a href="#">Rent By Top Brands</a></span>
+                                <br>
                                 <span><a href="#">Rent By Category</a></span>
+                                <br>
                                 <span><a href="#">News</a></span>
 
-                            </address>
+                            </div>
                         </div>
                     </div>
 
                     <div class="col-lg-2">
+                        <div class="widget">
+                            <h5>Service</h5>
+                            <div class="list">
+                                <span><a href="#">Car Rental</a></span>
+                                <br>
+                                <span><a href="#">Consultation</a></span>
+                                <br>
+                                <span><a href="#">Register your Vehicle</a></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="col-lg-2">
                         <h5>Quick Links</h5>
                         <div class="row">
                             <div class="col-lg-6">
@@ -2049,17 +2748,18 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                       
+                    </div> -->
 
-                    <div class="col-lg-3">
+                    <div class="col-lg-4">
                         <div class="widget">
-                            <h5>Social Network</h5>
-                            <div class="social-icons">
-                                <a href="#"><i class="fa fa-facebook fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-twitter fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-linkedin fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-pinterest fa-lg"></i></a>
-                                <a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                            <h5 class="mb-1">Maps Location</h5>
+                            <p class="font-weight-normal">08 W 36th St, New York, NY 10001</p>
+                            <div class="map">
+
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8393924898796!2d144.9536363151022!3d-37.817230742014345!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4e793770d3%3A0x9e44d6ad0d76ba7c!2zMTIxIEtpbmcgU3QsIE1lbGJvdXJuZSBWSUMgMzAwMCwg0JDQstGB0YLRgNCw0LvQuNGP!5e0!3m2!1sru!2sua!4v1469002590349"
+                                    width="300" height="200"></iframe>
                             </div>
                         </div>
                     </div>
